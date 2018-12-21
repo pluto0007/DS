@@ -1,0 +1,9 @@
+chetan 10 M
+neha 20 F
+shivani 30 F
+garima 26 F
+tango 90 M
+sharma 90 M
+tango 90 M
+ginni 10 F
+tanu 10 F

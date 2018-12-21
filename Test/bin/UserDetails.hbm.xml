@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "UserDetails" table = "USERDETAILS">
+      
+      <meta attribute = "class-description">
+         This class contains the USER detail. 
+      </meta>
+      
+      <id name = "userId" type = "int" column = "user_id">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "userName" column = "user_name" type = "string"/>
+      
+      <component name = "homeAddress" class="Address">
+         <property name = "street" column = "HOME_STREET_NAME" type = "string"/>
+         <property name = "city" column = "HOME_CITY_NAME" type = "string"/>
+         <property name = "state" column = "HOME_STATE_NAME" type = "string"/>
+         <property name = "zipcode" column = "HOME_PINCODE" type = "string"/>
+      </component>
+      
+   </class>
+</hibernate-mapping>
