@@ -12,7 +12,8 @@ public class InsertionBinarySearchSort {
 		int ins, i, j;
 		for (i = 1; i < arr.length; ++i) {
 			temp=arr[i];
-			// Finding the element location where it needs to be inserted by passing the till where it has to search(i) and with which element it has compare with(arr[i])
+			// Finding the element location where it needs to be inserted by passing the till where it has
+			// to search(i) and with which element it has compare with(arr[i])
 			ins = BinarySearch (arr, 0, i, arr[i]);
 			// Shifting elements to the right
 			for(j=i;j>ins;j--) {
